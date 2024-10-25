@@ -1,0 +1,71 @@
+/* blog.css */
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 500px;
+    height: 30px;
+  }
+  
+  input, select {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .dropdown {
+    margin-bottom: 15px;
+  }
+  
+  .dropdown button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f4f6f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 0.5rem;
+  }
+  
+  .dropdown-content label {
+    margin-bottom: 5px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,103 @@
+/* Add this to your CSS file to set the body background */
+*{
+    color: black;
+}
+.first{
+    background-image: url('https://files.oaiusercontent.com/file-RcgBQguzzIdrz8WJIjtPc7Id?se=2024-10-18T19%3A34%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D01fdbfc0-e97f-449e-b144-8e4f6c3228b9.webp&sig=wfy5Cw%2Bt/9QrDKrZ83HdzngCGniNTVbDhqqQwE66Uhs%3D'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire body */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    margin: 0; /* Remove default body margin */
+    position: absolute;
+    height: 100vh;
+    width: 200vh;
+    
+  }
+  
+  /* Contact container styles */
+  .contact-container {
+    border: 3px solid black;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    background-color: whitesmoke; /* Semi-transparent background */
+    border-radius: 8px;
+    backdrop-filter: blur(60);
+    box-shadow: 0px 5px 20px black;
+    margin: 100px auto; /* Center the form */
+    color: #333; /* Ensure text is readable */
+  }
+  
+  h2{
+    text-align: center; /* Center the title */
+    font-size: 50px;
+   
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 800;
+   font-size: 18px;
+   text-decoration: underline;
+   
+
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border: 1px solid black;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  button:hover {
+    background-color: blue;
+  }
+  form{
+    padding: 50px;
+  }
+  
+  .head{
+    font-size: 35px;
+    text-decoration: underline;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+     position: relative;
+     top: 50px;
+     font-weight: 700;
+     backdrop-filter: blur(100);
+  }
+  .but{
+    background-color: red;
+    padding: 3px;
+  }

@@ -1,0 +1,285 @@
+/* blog.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  
+  margin: 0;
+  padding: 0;
+  background-color:white;
+  color: #333;
+}
+
+.home {
+  max-width: 2000px;
+  width: 200vh; /* Increased the width of the overall page */
+  margin: 0 auto; /* Center the content */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  
+  text-align: center;
+  color: transparent;
+ 
+  padding: 20px 0;
+  height: 40vh;
+  
+   /* Rounded corners */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  position: relative;
+  z-index: 2; /* Ensure the text stays on top of images */
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Scrolling images in header */
+.header .image-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Place the images behind the text */
+  display: flex;
+  animation: slide 15s infinite; /* Duration and loop for the slider */
+}
+
+.header .image-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8; /* Transparency for text readability */
+}
+
+/* Animation for sliding images */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+/* Other elements */
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  height: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.search-button:hover {
+  background-color: #218838;
+}
+
+.product-details {
+  margin: 40px auto;
+  max-width: 100%;
+  background-color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.product-description {
+  font-size: 1rem;
+  margin-top: 20px;
+  line-height: 1.6;
+  color: red;
+  background-color: #ffe6e6;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.product-info-table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  border: 20px solid black;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.product-info-table th, .product-info-table td {
+  padding: 20px;
+  text-align: left;
+  border: 20px solid black;
+  border-bottom: 2px solid #ddd;
+}
+
+.product-info-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.product-info-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.product-info-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.health-conditions-list {
+  margin-top: 20px;
+  font-size: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.health-conditions-list h4 {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  height: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.sticky-nav {
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
+  box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  text-align: center;
+  border-top: 2px solid #007bff;
+}
+
+.sticky-nav h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.sticky-nav p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Styling for Dropdowns and Search Bar */
+.search-input, .select-dropdown {
+  width: 200px;
+  padding: 12px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-input:focus, .select-dropdown:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+/* In your CSS file (header.css) */
+
+@keyframes scrollBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.header {
+  position: relative;
+  width: 109.1%;
+  background-size:600px ;
+  
+  position: absolute;
+  right: 8%;
+  
+  height: 300px; /* Adjust as needed */
+  background-image: url('https://files.oaiusercontent.com/file-ZBJwKBkSNpMCvzK1NplCIz04?se=2024-10-23T11%3A27%3A29Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D0d0dba1c-8c8a-4b10-814d-7d4dd0391a02.webp&sig=KpiuDfNuCz5w83huuL1Lsf1IkmeAxCs4ncvx1yRRDf8%3D');
+   /* Ensures each image covers the background */
+  background-position: left top, right top, center top; /* Set initial positions */
+  
+}
+
+/* Optional overlay for better readability */
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity */
+  z-index: 1;
+  
+}
+
+.header{
+  position: relative;
+  top: -2.09vh;
+  z-index: 2; /* To ensure the content is above the background */
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.header h1 {
+  font-size: 3em;
+  color: whitesmoke;
+  position:relative;
+  top: 8.5vh;
+ 
+}
+
+.header p {
+  font-size: 1.5em;
+  color: whitesmoke;
+  position:relative;
+  top: 8.5vh;
+}
+.cont{
+  background-color: transparent;
+  position:relative;
+  bottom: 50px;
+  left: 7vh;
+ font-family: monospace;
+height: 1000px;
+ background:radial-gradient(black,transparent);
+}

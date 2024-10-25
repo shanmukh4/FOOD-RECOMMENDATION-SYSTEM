@@ -1,0 +1,136 @@
+.login{
+    height: 70vh;
+    width: 50vh;
+    background-color: transparent;
+    border: 2px solid black;
+    box-shadow: 2px 2px 8px black;
+    position: relative;
+    left: 54vh;
+    top: 5cap;
+    border-radius: 50px;
+  background-color: yellow;
+    backdrop-filter: blur(8px);
+}
+
+.reg input{
+     font-size: 35px;
+     position: absolute;
+     left: 8.3vh;
+     top: 26vh;
+     border-radius: 35px;
+     background-color: white;
+     border: 2px solid black;
+     font-family: cursive;
+     width: 30vh;
+     cursor: pointer;
+     padding-left: 20px;
+     height: 5vh;
+     font-size: 2vh;
+}
+.pass input{
+    font-size: 35px;
+    position: absolute;
+    left: 8.3vh;
+    top: 33vh;
+    border-radius: 35px;
+    background-color: white;
+    border: 2px solid black;
+    font-family: cursive;
+    width: 30vh;
+    cursor: pointer;
+    padding-left: 20px;
+    height: 5vh;
+    font-size: 2vh;
+}
+.sign button{
+    font-size: 2.5vh;
+    position: absolute;
+    left: 8.3vh;
+    top: 42vh;
+    border-radius: 35px;
+    background-color: white;
+    border: 2px solid black;
+    font-family: cursive;
+    width: 30vh;
+    cursor: pointer;
+    
+    height: 5vh;
+    font-size: 3vh;
+     background-color: orange;
+}
+.reg input:hover{
+    box-shadow: 2px 4px 2px black;
+}
+.profile button{
+    font-size: 35px;
+    position: absolute;
+    left: 8.3vh;
+    top: 50vh;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid black;
+    font-family: cursive;
+    width: 10vh;
+    cursor: pointer;
+    padding-left: 20px;
+    height: 5vh;
+    font-size: 1.5vh;
+    box-shadow: 2px 2px 8px black;
+}
+#two{
+    position: absolute;
+    left: 22vh;
+}
+button span {
+    position: absolute;
+    left: 1.2rem;
+    top: 0.7rem;
+    font-weight: 700;
+}
+.all{
+    position: relative;
+    height: 91.9vh;
+    width: 240vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    background: url("https://files.oaiusercontent.com/file-BUm2c76fTxQarvrcDhIZBVN3?se=2024-10-18T20%3A33%3A13Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D4f5f31ea-e1aa-414c-802c-81a5380a6567.webp&sig=38GvfdsdYSIjWXd35NUAt%2BIv4KY0RaqRrn6AHoGUtDo%3D" ) no-repeat;
+    background-size: 60%  130%;
+    background-position:inherit;
+   background-blend-mode: lighten;
+   
+}
+
+.login:hover{
+    backdrop-filter: blur(2px);
+    box-shadow: 5px 5px 10px black;
+}
+ input:hover{
+     box-shadow: 2px 2px 8px black;
+}
+button{
+    box-shadow: 2px 2px 8px black;
+}
+.login p{
+    position: absolute;
+    left: 12vh;
+    bottom: 8vh;
+    font-size: 2vh;
+    font-family: cursive;
+    color: black;
+
+} 
+.head{
+    color: black;
+    position: relative;
+    left: 13%;
+    top: 15%;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+.click{
+    color: blue;
+    text-decoration: underline;
+}
