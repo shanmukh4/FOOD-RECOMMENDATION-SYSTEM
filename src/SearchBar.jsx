@@ -23,7 +23,16 @@ const SearchBar = ({ onSearch, healthConditions }) => {
   return (
     
     <div className="search-bar">
-    
+
+<div class="mx-auto max-w-7xl px-2 sm:px-4 lg:divide-y lg:divide-gray-300 lg:px-8">
+  <div class="relative flex h-16 justify-between">
+    <div class="relative z-10 flex px-2 lg:px-0">
+      <div class="flex flex-shrink-0 items-center">
+      
+      </div>
+    </div>
+    <div class="relative z-0 flex flex-1 items-center justify-center px-2 sm:absolute sm:inset-0">
+      <div class="w-full sm:max-w-xs">
       <div className="input-group">
         {/* Step 1: Input product name */}
         <input
@@ -34,8 +43,11 @@ const SearchBar = ({ onSearch, healthConditions }) => {
           required
         />
       </div>
-
-      <div className="input-group">
+      </div>
+    </div>
+  </div>
+  <div class="hidden lg:flex lg:space-x-8 lg:py-2" aria-label="Global">
+  <div className="input-group">
         {/* Input for age */}
         <input
           type="number"
@@ -44,9 +56,7 @@ const SearchBar = ({ onSearch, healthConditions }) => {
           onChange={(e) => setAge(e.target.value)}
           required
         />
-      </div>
-
-      <div className="input-group">
+      </div>  <div className="input-group">
         {/* Input for gender */}
         <select value={gender} onChange={(e) => setGender(e.target.value)} required>
           <option value="" disabled>Select gender</option>
@@ -55,8 +65,6 @@ const SearchBar = ({ onSearch, healthConditions }) => {
           <option value="other">Other</option>
         </select>
       </div>
-
-      {/* Step 2: Health conditions dropdown, only visible after clicking */}
       <div className="dropdown">
         <button type="button" onClick={handleToggleDropdown}>
           {dropdownVisible ? 'Hide Health Conditions' : 'Select Health Conditions'}
@@ -82,10 +90,21 @@ const SearchBar = ({ onSearch, healthConditions }) => {
           </div>
         )}
       </div>
+        {/* Step 3: Submit button to trigger the search */}
+        <button onClick={handleProductSearch}>Search</button>
 
-      {/* Step 3: Submit button to trigger the search */}
-      <button onClick={handleProductSearch}>Search</button>
+  </div>
+</div>
+
+
+
+
+
     </div>
+
+
+
+
   );
 };
 
